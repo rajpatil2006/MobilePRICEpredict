@@ -1,0 +1,80 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Numeric Inputs -->
+        <EditText android:id="@+id/etBatteryPower" android:hint="Battery Power (mAh)"
+            android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etClockSpeed" android:hint="Clock Speed (GHz)"
+            android:inputType="numberDecimal" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etFC" android:hint="Front Camera (MP)"
+            android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etIntMemory" android:hint="Internal Memory (GB)"
+            android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etMDep" android:hint="Mobile Depth (cm)"
+            android:inputType="numberDecimal" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etMobileWt" android:hint="Mobile Weight (gm)"
+            android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etNCores" android:hint="Processor Cores"
+            android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etPC" android:hint="Primary Camera (MP)"
+            android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etPxHeight" android:hint="Pixel Height"
+            android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etPxWidth" android:hint="Pixel Width"
+            android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etRAM" android:hint="RAM (MB)"
+            android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etSCH" android:hint="Screen Height (cm)"
+            android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etSCW" android:hint="Screen Width (cm)"
+            android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/etTalkTime" android:hint="Talk Time (hr)"
+            android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- Switches for Boolean Fields -->
+        <Switch android:id="@+id/switchBluetooth" android:text="Bluetooth Support" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Switch android:id="@+id/switchDualSim" android:text="Dual SIM Support" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Switch android:id="@+id/switch4G" android:text="4G Support" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Switch android:id="@+id/switch3G" android:text="3G Support" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Switch android:id="@+id/switchTouch" android:text="Touch Screen" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Switch android:id="@+id/switchWiFi" android:text="WiFi Support" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- Predict Button -->
+        <Button
+            android:id="@+id/btnPredict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Predict Price"/>
+
+        <!-- Prediction Result -->
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:paddingTop="12dp"/>
+    </LinearLayout>
+</ScrollView>
